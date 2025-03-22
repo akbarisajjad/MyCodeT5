@@ -1,64 +1,51 @@
-# CodeT5 and CodeT5+
+# CodeT5 و CodeT5+
 
-Official research release for  **CodeT5** and **CodeT5+** models for **Code Understanding and Generation** from Salesforce Research, which are introduced by the following papers:
+انتشار رسمی تحقیقاتی برای مدل‌های **CodeT5** و **CodeT5+** برای **درک و تولید کد** از Salesforce Research، که در مقالات زیر معرفی شده‌اند:
 
-*Title*: [CodeT5+: Open Code Large Language Models for Code Understanding and Generation](https://arxiv.org/pdf/2305.07922.pdf)
+*عنوان*: [CodeT5+: مدل‌های بزرگ زبان کد باز برای درک و تولید کد](https://arxiv.org/pdf/2305.07922.pdf)
 
-> *Authors*: [Yue Wang](https://yuewang-cuhk.github.io/)\*, [Hung Le](https://sites.google.com/view/henryle2018/home?pli=1)\*, [Akhilesh Deepak Gotmare](https://akhileshgotmare.github.io/), [Nghi D.Q. Bui](https://bdqnghi.github.io/), [Junnan Li](https://sites.google.com/site/junnanlics), [Steven C.H. Hoi](https://sites.google.com/view/stevenhoi/home) (* indicates equal contribution)
+> *نویسندگان*: [Yue Wang](https://yuewang-cuhk.github.io/)\*, [Hung Le](https://sites.google.com/view/henryle2018/home?pli=1)\*, [Akhilesh Deepak Gotmare](https://akhileshgotmare.github.io/), [Nghi D.Q. Bui](https://bdqnghi.github.io/), [Junnan Li](https://sites.google.com/site/junnanlics), [Steven C.H. Hoi](https://sites.google.com/view/stevenhoi/home) (* نشان‌دهنده مشارکت برابر است)
 
-*Title*: [CodeT5: Identifier-aware Unified Pre-trained Encoder-Decoder Models for Code Understanding and Generation](https://arxiv.org/pdf/2109.00859.pdf)
+*عنوان*: [CodeT5: مدل‌های یکپارچه پیش‌آموخته Encoder-Decoder با آگاهی از شناسه‌ها برای درک و تولید کد](https://arxiv.org/pdf/2109.00859.pdf)
 
-> *Authors*: [Yue Wang](https://yuewang-cuhk.github.io/), [Weishi Wang](https://www.linkedin.com/in/weishi-wang/)
-, [Shafiq Joty](https://raihanjoty.github.io/), [Steven C.H. Hoi](https://sites.google.com/view/stevenhoi/home)
+> *نویسندگان*: [Yue Wang](https://yuewang-cuhk.github.io/), [Weishi Wang](https://www.linkedin.com/in/weishi-wang/), [Shafiq Joty](https://raihanjoty.github.io/), [Steven C.H. Hoi](https://sites.google.com/view/stevenhoi/home)
 
+در عمل، مدل‌های CodeT5 و CodeT5+ می‌توانند به عنوان یک دستیار کدنویسی مبتنی بر هوش مصنوعی برای افزایش بهره‌وری توسعه‌دهندگان نرم‌افزار مستقر شوند. در Salesforce، ما یک دموی دستیار کدنویسی هوش مصنوعی با استفاده از CodeT5 به عنوان یک پلاگین VS Code ساخته‌ایم که سه قابلیت ارائه می‌دهد:
 
-In practice, CodeT5 and CodeT5+ models can be deployed as an AI-powered coding assistant to boost the productivity of software developers.
-At Salesforce, we build an AI coding assistant demo using CodeT5 as a VS Code plugin to provide three capabilities:
+- **تولید کد از متن**: تولید کد بر اساس توصیف زبان طبیعی.
+- **تکمیل خودکار کد**: تکمیل کل تابع کد با توجه به نام تابع هدف.
+- **خلاصه‌سازی کد**: تولید خلاصه‌ای از یک تابع در توصیف زبان طبیعی.
 
-- **Text-to-code generation**: generate code based on the natural language description.
-- **Code autocompletion**: complete the whole function of code given the target function name.
-- **Code summarization**: generate the summary of a function in natural language description.
+![دموی CodeT5](./codet5.gif)
 
-![CodeT5 demo](./codet5.gif)
+## چه چیز جدیدی است: 🎉
 
-## What's New: 🎉 
+**مه 2023**
 
-**May 2023**
+مقاله و مدل‌های **CodeT5+** منتشر شدند! 🔥 <br>
+[مقاله](https://arxiv.org/pdf/2305.07922.pdf) | [کد](https://github.com/salesforce/CodeT5/tree/main/CodeT5+) | [مدل](https://huggingface.co/models?sort=downloads&search=codet5p) | [وبلاگ](https://blog.salesforceairesearch.com/codet5-open-code-large-language-models/)
 
-**CodeT5+** paper and models are released！🔥 <br>
-[paper](https://arxiv.org/pdf/2305.07922.pdf) | [code](https://github.com/salesforce/CodeT5/tree/main/CodeT5+) | [model](https://huggingface.co/models?sort=downloads&search=codet5p) | [blog](https://blog.salesforceairesearch.com/codet5-open-code-large-language-models/)
+**سپتامبر 2022**
 
-**Sep 2022**
+مقاله **CodeRL** ما در NeurIPS 2022 پذیرفته شد! <br>
+[مقاله](https://arxiv.org/pdf/2207.01780.pdf) | [کد](https://github.com/salesforce/CodeRL) | [وبلاگ](https://blog.salesforceairesearch.com/coderl)
 
-Our **CodeRL** paper has been accepted to NeurIPS 2022! <br>
-[paper](https://arxiv.org/pdf/2207.01780.pdf) | [code](https://github.com/salesforce/CodeRL) | [blog](https://blog.salesforceairesearch.com/coderl) 
+**ژوئیه 2022**
 
+ما دو چک‌پوینت بزرگ CodeT5 را در HuggingFace منتشر کردیم: [Salesforce/codet5-large](https://huggingface.co/Salesforce/codet5-large) و [Salesforce/codet5-large-ntp-py](https://huggingface.co/Salesforce/codet5-large-ntp-py)، که در [مقاله CodeRL](https://arxiv.org/pdf/2207.01780.pdf) معرفی شده‌اند.
 
-**July 2022**
+**اکتبر 2021**
 
-We release two large-sized CodeT5 checkpoints at HuggingFace: [Salesforce/codet5-large](https://huggingface.co/Salesforce/codet5-large) and [Salesforce/codet5-large-ntp-py](https://huggingface.co/Salesforce/codet5-large-ntp-py), which are introduced by the [CodeRL paper](https://arxiv.org/pdf/2207.01780.pdf).
+ما [چک‌پوینت‌های fine-tuned](https://console.cloud.google.com/storage/browser/sfr-codet5-data-research/finetuned_models) را برای تمامی وظایف پایین‌دستی که در مقاله پوشش داده شده‌اند، منتشر کردیم. علاوه بر این، ما یک چک‌پوینت fine-tuned از CodeT5-base ([Salesforce/codet5-base-multi-sum](https://huggingface.co/Salesforce/codet5-base-multi-sum)) را برای خلاصه‌سازی چندزبانه کد منتشر کردیم.
 
-**Oct 2021**
+**سپتامبر 2021**
 
-We release [fine-tuned checkpoints](https://console.cloud.google.com/storage/browser/sfr-codet5-data-research/finetuned_models)
-for all the downstream tasks covered in the paper.
-Besides, we release a CodeT5-base fine-tuned
-checkpoint ([Salesforce/codet5-base-multi-sum](https://huggingface.co/Salesforce/codet5-base-multi-sum)) for
-multilingual code summarization. 
+مقاله **CodeT5** در EMNLP 2021 پذیرفته شد و مدل‌ها منتشر شدند! <br>
+[مقاله](https://arxiv.org/pdf/2109.00859.pdf) | [کد](https://github.com/salesforce/CodeT5/tree/main/CodeT5) | [مدل](https://huggingface.co/models?sort=downloads&search=codet5) | [کارت مدل](https://github.com/salesforce/CodeT5/blob/main/CodeT5/CodeT5_model_card.pdf) | [وبلاگ](https://blog.salesforceairesearch.com/codet5/)
 
+## استناد
 
-**Sep, 2021**
-
-**CodeT5** paper accepted to EMNLP 2021 and models are released! <br>
-[paper](https://arxiv.org/pdf/2109.00859.pdf) | [code](https://github.com/salesforce/CodeT5/tree/main/CodeT5) | [model](https://huggingface.co/models?sort=downloads&search=codet5) | [model card](https://github.com/salesforce/CodeT5/blob/main/CodeT5/CodeT5_model_card.pdf) | [blog](https://blog.salesforceairesearch.com/codet5/) 
-
-
-
-
-
-## Citation
-
-If you find this code to be useful for your research, please consider citing:
+اگر این کد را برای تحقیقات خود مفید می‌دانید، لطفاً به آن استناد کنید:
 
 ```
 @inproceedings{
@@ -86,28 +73,22 @@ If you find this code to be useful for your research, please consider citing:
 }
 ```
 
-## License
+## مجوز
 
-The code is released under the BSD-3 License (see `LICENSE.txt` for details), but we also ask that users respect the
-following:
+این کد تحت مجوز BSD-3 منتشر شده است (برای جزئیات بیشتر به `LICENSE.txt` مراجعه کنید)، اما از کاربران نیز می‌خواهیم که به موارد زیر احترام بگذارند:
 
-This software should not be used to promote or profit from:
+این نرم‌افزار نباید برای ترویج یا سود بردن از:
 
-violence, hate, and division,
+خشونت، نفرت و تفرقه،
 
-environmental destruction,
+تخریب محیط زیست،
 
-abuse of human rights, or
+سوء استفاده از حقوق بشر، یا
 
-the destruction of people's physical and mental health.
+تخریب سلامت جسمی و روانی افراد استفاده شود.
 
-We encourage users of this software to tell us about the applications in which they are putting it to use by emailing
-codeT5@salesforce.com, and to
-use [appropriate](https://arxiv.org/abs/1810.03993) [documentation](https://www.partnershiponai.org/about-ml/) when
-developing high-stakes applications of this model.
+ما از کاربران این نرم‌افزار تشویق می‌کنیم که با ارسال ایمیل به آدرس codeT5@salesforce.com، ما را از کاربردهایی که در آن استفاده می‌کنند مطلع کنند و از [مستندات مناسب](https://arxiv.org/abs/1810.03993) [مستندات](https://www.partnershiponai.org/about-ml/) هنگام توسعه کاربردهای با ریسک بالا از این مدل استفاده کنند.
 
+## مشارکت کنید
 
-## Get Involved
-
-Please create a GitHub issue if you have any questions, suggestions, requests or bug-reports. We welcome PRs!
-
+لطفاً اگر سوال، پیشنهاد، درخواست یا گزارش اشکالی دارید، یک issue در GitHub ایجاد کنید. ما PRها را نیز می‌پذیریم!
